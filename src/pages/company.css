@@ -1,0 +1,27 @@
+.company {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 70vh;
+    animation: lift 3s;
+}
+
+.company p {
+    color: orangered;
+    animation: lift 3s;
+}
+
+.company h4 {
+    font-size: 2rem;
+    color: white;
+}
+
+@keyframes lift {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

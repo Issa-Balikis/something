@@ -1,0 +1,92 @@
+.roadfreight {
+    padding: 90px 0;
+}
+
+.roadfreight h4 {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 200px;
+}
+
+.road {
+    padding: 110px 0;
+    display: flex;
+}
+
+.road .sidebar {
+    background: gainsboro;
+    padding: 50px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    width: 30%;
+}
+.sidebar h6 {
+    font-size: 22px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.service_links {
+    background: white;
+    padding: 20px;
+}
+
+.sidebar .service_links li{
+    border-bottom: 1px solid orangered;
+    list-style-type: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.service_links li a {
+    font-size: 19px;
+    text-decoration: none;
+    color: rgb(32, 32, 90);
+    font-weight: bold;
+}
+
+.service_links li a:hover {
+    background: orangered;
+    color: white;
+    padding: 20px;
+}
+
+.rightbar {
+    color: gray;
+    width: 60%;
+    padding: 0 40px;
+}
+
+.rightbar h4 {
+    color: rgb(32, 32, 90);
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+}
+
+.rightbar p {
+    line-height: 1.5rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+
+    .roadfreight h4{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .road {
+        display: grid;
+    }
+
+    .road .sidebar {
+        width: 100%;
+   }
+
+   .rightbar {
+        width: 100%;
+   }
+}

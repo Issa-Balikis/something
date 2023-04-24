@@ -1,0 +1,156 @@
+.why {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 230px 100px;
+}
+
+.whychooseus h2{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.whychooseus p {
+    color: orangered;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.whychooseus .btn {
+    text-align: center;
+}
+
+.whychooseus .btn button{
+    background: white;
+    color: rgb(24, 24, 77);
+    font-weight: bold;
+    padding: 20px;
+}
+
+.whychooseus .btn button:hover {
+    background: orangered;
+    color: white;
+}
+
+.why .content {
+    display: flex;
+    padding: 200px 0;
+}
+
+.why .content .start {
+    padding: 50px 0 ;
+}
+
+.why .content .start img {
+    width: 500px;
+    height: 500px;
+}
+
+.why .content .end {
+    padding: 50px;
+}
+
+.why .content .end h6 {
+    color: orangered;
+    font-size: 17px;
+    width: 120%;
+    padding: 20px;
+}
+
+.why .content .end h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px;
+    width: 110%;
+    color: rgb(18, 18, 66);
+}
+
+.why .content .end p {
+    color: gray;
+    padding:  0 20px;
+    line-height: 1.5rem;
+}
+
+.why .content .end .btn {
+    text-align: center;
+    padding: 20px;
+}
+
+.why .content .end .btn button {
+    padding: 20px;
+    font-weight: bold;
+}
+
+.why .content .end .btn button:hover {
+    border: 1px solid orangered;
+    background: transparent;
+    color: rgb(18, 18, 66);
+    font-weight: bold;
+}
+
+.outline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.outline .answer h3 {
+        color: rgb(18, 18, 66);
+}
+
+.outline .answer h3:hover {
+    color: orangered;
+    transition: .3s ease-in-out;
+    height: 30px;
+}
+
+.outline .answer p {
+    color: gray;
+    padding: 20px 0;
+}
+
+@media (max-width: 992px) {
+    .why {
+        display: grid;
+        padding: 150px 0;
+        margin: 140px 0;
+    }
+
+    .whychooseus h2{
+        font-size: 1.8rem;
+        text-align: center;
+}
+    .whychooseus p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .whychooseus .btn {
+        display: flex;
+        align-items: center;
+        margin: 0 90px;
+    }
+
+    .why .content {
+        display: grid;
+    }
+
+    .why .content .start {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why .content .start video {
+        width: 100%;   
+    }
+
+     .why .outline {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            margin: 0 25px;
+        }
+}

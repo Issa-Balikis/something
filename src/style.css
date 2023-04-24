@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    font-family: 'Inter', sans-serif;
+    background-image: url(../public/images/truck2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;  
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.589);
+}
+
+.navbar .title {
+    color: aliceblue;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+h1 .small {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 15px;
+}
+
+.links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.links ul li a:hover {
+    color: wheat;
+}
+
+.search {
+    color: white;
+    cursor: pointer;
+}
+
+/* .searchbox {
+    background: rgb(88, 88, 88);
+    border-radius: 20px;
+}
+
+.search_text {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    transition: .4s;
+    line-height: 40px;
+    width: 0;
+}
+
+.search{
+    margin-right: 5px;
+} */
+
+.search:hover {
+    color: orangered;
+}
+
+.btn button{
+    background: orangered;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: 1px solid orangered;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    transition: .3s;
+    background: transparent;
+}
+
+.side-btn {
+    display: none;
+    color: white;
+}
+
+@media (max-width: 992px) {
+
+    .navlinks {
+        display: none;
+    }
+
+    .navbar h1 {
+        text-align: center;
+    }
+
+    .navlinks-sidebar {
+        position: absolute; 
+        inset: 30% 0 0 0 ;
+        display: block;  
+        background: orangered; 
+        right: 70px; 
+        top: 72px;
+        transition: all 3s ease-in-out;
+        z-index: 5; 
+    }
+
+    .navlinks-sidebar {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    ul li {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #000;
+        padding: 10px;
+    }
+
+    ul li:last-child {
+        border-bottom: none;
+    }
+
+    li a {
+        font-weight: bold;
+    }
+
+    .side-btn {
+        display: block;
+        position: absolute;
+        right: 70px;
+        color: white;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+    .side-btn:hover {
+        cursor: pointer;
+    }
+
+    li a:hover {
+        color: beige;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .btn button{
+    background: rgb(25, 25, 63);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid rgb(25, 25, 63);
+    cursor: pointer;
+}
+}
+
+/* ABOUT */
+
+.about {
+    display: flex;
+    align-items: center;
+    background: white;
+    color: rgb(28, 28, 77);
+    padding: 20px;
+    padding-bottom: 90px;
+}
+
+.left {
+    padding: 70px 50px;
+}
+
+.p {
+    color: orangered;
+    padding: 7px 10px;
+}
+
+.l-text {
+    padding: 15px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 120%;
+}
+
+.left p {
+    color: orangered;
+    padding: 10px;
+    width: 100%;
+}
+
+.left ul {
+    padding: 10px;
+    list-style-type: none;
+}
+
+.left ul li::before {
+    content: '✓';
+    color: orangered;
+    font-weight: bold;
+}
+
+.left .btn button {
+    margin: 15px;
+    color: white;
+}
+
+.left .btn button:hover {
+    color: rgb(243, 213, 157);
+}
+
+.left .btn .unbtn {
+    border: none;
+    background: none;
+    color: white;
+    text-decoration: underline;
+}
+
+.left .btn .unbtn:hover {
+    color: orangered;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.right img{
+    width: 80%;
+}
+
+.content-wrap {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .about {
+        display: grid;
+        width: 100%;
+        
+    }
+
+}

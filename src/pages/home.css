@@ -1,0 +1,93 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 250px;
+    color: white;
+}
+
+.home-title {
+    font-size: 2rem;
+    padding: 10px;
+    animation: slideInLeft 3s ease-in-out;
+}
+
+
+
+.p-text {
+    color: orangered;
+    font-size: 1.3rem;
+    animation: slideInRight 3s ease-in-out;
+}
+
+.btnn button {
+    margin: 15px;
+    font-size: 20px;
+    background: orangered;
+    padding: 20px 30px;
+    border: 3px solid orangered;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s;
+    animation: bounce 3s ease-in-out;
+}
+
+.btnn button:hover {
+    background: transparent;
+    color: palegoldenrod;
+    transform: translateY(-10px);
+}
+
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes slideInLeft {
+   from {
+    transform: translateX(-300px);
+   }
+   to {
+    transform: translateX(0);
+   }
+}
+@keyframes slideInRight {
+   from {
+    transform: translateX(300px);
+   }
+   to {
+    transform: translateX(0);
+   }
+}
+@keyframes bounce {
+   from {
+    transform: translateY(300px);
+   }
+   to {
+    transform: translateY(0);
+   }
+}
+
+@media (max-width: 992px) {
+
+    .home {
+        padding: 350px 0;
+        margin: -90px 0;
+    }
+    .home-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .p-text {
+        font-size: 1rem;
+    }
+
+    .btnn {
+        display: flex;
+    }
+
+    .btnn button {
+        font-size: 18px;
+        padding: 15px;
+    }
+}

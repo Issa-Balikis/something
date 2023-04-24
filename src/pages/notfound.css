@@ -1,0 +1,18 @@
+.notfound {
+    background-color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notfound h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.notfound a {
+    padding: 10px ;
+    font-weight: bold;
+}

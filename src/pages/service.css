@@ -1,0 +1,129 @@
+.services {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 350px;
+}
+
+.service-text h2 {
+    color: white;
+    font-size: 3rem;
+    animation: slideInRight 3s ease-in-out;
+}
+.service-p {
+    color: orangered;
+    animation: slideInRight 3s ease-in-out;
+}
+
+.p-p {
+    margin: 0;
+    padding: 50px 50px;
+    display: flex;
+}
+
+
+.left p{
+    padding: 20px;
+    font-weight: bold;
+    
+}
+
+.left h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 160%;
+    color: rgb(8, 8, 49);
+}
+
+.right {
+    padding: 90px 0;
+}
+
+.right p {
+    font-size: 18px;
+    width: 70%;
+    color: gray;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.service-card:hover{
+    transition: .3s;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.9);
+}
+
+.service-card h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(8, 8, 49);
+}
+
+.service-card p {
+    padding: 20px;
+    color: gray;
+    line-height: 2rem;
+}
+
+.service-card a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(8, 8, 49);
+    font-weight: bold;
+    margin: 0 50px;
+}
+
+.service-card a:hover {
+    background: orangered;
+    padding: 20px;
+    color: white;
+    transition: .3s;
+}
+
+@media (max-width: 1200px) {
+   .services {
+    padding: 150px 0;
+    margin: 130px 0;
+   }
+    
+    .service-text h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+  
+    .service-p {
+        text-align: center;
+    }
+
+    .services .btnn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .p-p {
+        display: grid;
+    }
+
+    .p-p .left {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .p-p .right {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

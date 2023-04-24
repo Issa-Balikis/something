@@ -1,0 +1,124 @@
+.blog {
+    background-color: hsl(0, 0%, 96%);
+    padding-bottom: 200px;
+}
+
+.blog h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(26, 26, 82);
+    padding: 10px;
+}
+
+.blogs ul{
+    display: flex;
+    justify-content: center;
+}
+
+.blogs ul button {
+    border: none;
+    margin: 5px;
+    font-weight: 600;
+    color: rgb(26, 26, 82);
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.blogs ul button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: orangered;
+}
+
+.bloglist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 30px;
+    justify-content: center;  
+}
+
+.blogitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.blogitem img{
+    border-radius: 15px;
+}
+.blogitem img:hover {
+    transform: scale(1.1);
+} 
+
+.blogitem h5 {
+    color: rgb(26, 26, 82);
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 15px;
+}
+
+.blogitem p {
+    text-align: center;
+    width: 70%;
+    color: gray;
+    line-height: 1.4rem;
+}
+
+.blogitem .button {
+    padding: 10px;
+}
+
+.blogitem button {
+    background: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+}
+
+.blogitem button:hover {
+    text-decoration: underline;
+    color: orangered;
+    transition: .4s;
+    cursor: pointer;
+}
+
+/* READ */
+.display {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 14px 28px;
+    border-radius: 3px;
+}
+
+.overlay {
+    background: white;
+    
+}
+
+@media (max-width: 992px) {
+    .blog {
+        width: 100%;
+    }
+    .blogs ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 1rem;
+    }
+
+        .blogs ul button {
+            margin: 5px;
+            padding: 10px 0;
+        }
+
+    .bloglist {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 20rem);
+        padding: 10px 30px;
+        justify-content: center;  
+}
+}

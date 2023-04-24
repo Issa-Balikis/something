@@ -1,0 +1,79 @@
+ .request {
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+.request .h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.forms {
+    padding: 20px;
+    width: 60%; 
+    background-color: orangered;
+    border-radius: 15px;
+}
+
+.forms form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    height: 40px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+ .one-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select {
+    padding: 0 47px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.request_btn{
+    text-align: center;
+}
+
+.request_btn button{
+    margin: 15px;
+    font-size: 20px;
+    background: rgba(117, 54, 31, 0.658);
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.errors {
+    color: wheat;
+    bottom: 0;
+}
+
+@media (max-width: 1100px) {
+   form input {
+    display: flex;
+    flex-direction: column;
+   }
+
+    .one-line {
+        display: flex;
+        flex-direction: column;
+    }
+   
+}

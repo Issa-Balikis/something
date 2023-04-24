@@ -1,0 +1,167 @@
+ .footer {
+    padding-top: 60px;
+    margin-top: 200px;
+} 
+
+.newsletter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(235, 229, 229);
+
+}
+
+.newsletter-title h6{
+    font-size: 18px;
+    color: rgb(35, 35, 83);
+}
+
+.newsletter-title p {
+    color: gray;
+    font-size: 15px;
+}
+
+.newsletter-form form{
+    display: flex;
+}
+
+.newsletter-btn {
+    padding: 15px;
+}
+
+.newsletter-btn button {
+    padding: 10px 20px;
+    background: orangered;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.newsletter-btn button:hover {
+    background: rgb(18, 18, 66);
+    transition: .3s;
+}
+
+.newsletter .socials {
+    display: flex;
+    padding: 20px;
+    font-size: 22px;
+}
+
+.facebook,
+.twitter,
+.instagram,
+.whatsapp {
+    background: white;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 10px;
+}
+
+ .facebook:hover,
+ .twitter:hover,
+ .instagram:hover,
+ .whatsapp:hover {
+    background: rgb(26, 26, 85);
+    color: white;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.footerlinks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15rem);
+    padding: 30px;
+    justify-content: center;
+}
+
+.footerlinks li {
+    list-style-type: none;
+    padding: 6px;
+    text-align: center;
+    border: none;
+}
+
+.footerlinks a {
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+}
+
+.footerlinks a:hover {
+    color: orangered;
+}
+
+.footerlinks h4 {
+    padding: 20px;
+    font-size: 1rem;
+    color: rgb(41, 41, 92);
+    text-align: center;
+}
+
+.logo {
+    padding: 40px;
+}
+
+.logo h1{
+    color: orangered;
+}
+
+.logo p {
+    color: gray;
+    font-size: 14px;
+}
+
+.logo .label {
+    padding: 20px;
+    font-size: 14px;
+}
+
+.logo label {
+    color: gray;
+    display: block;
+}
+
+.terms {
+    display: flex;
+    justify-content: space-around;
+    background: rgb(235, 229, 229);
+    border-top: 1px solid rgba(143, 141, 141, 0.486);
+    height: 50px;
+}
+
+.terms p {
+    font-size: 14px;
+    color: gray;
+}
+
+.terms a {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+}
+
+.terms a:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+
+@media (max-width: 992px) {
+    .footer {
+        margin-top: 200px;
+    }
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .newsletter-form form{
+    display: flex;
+    flex-direction: column;
+}
+}
